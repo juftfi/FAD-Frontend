@@ -146,6 +146,12 @@ export const VestingPortal: React.FC = () => {
                         src={project.logo}
                         alt={project.name}
                         referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.src.endsWith('/logo.png')) {
+                            target.src = '/logo.png';
+                          }
+                        }}
                         className="w-10 h-10 rounded-lg border border-slate-700 bg-slate-800 object-cover"
                       />
                       <div>

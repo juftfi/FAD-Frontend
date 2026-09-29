@@ -54,9 +54,12 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
       <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-[#0C111D] shadow-2xl">
         <div className="absolute inset-0">
           <img
-            src="/src/assets/images/brew_launchpad_hero_1790661362294.jpg"
+            src="/images/brew_launchpad_hero_1790661362294.jpg"
             alt="FAD Hero"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
             className="w-full h-full object-cover object-center opacity-30 scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#080C14] via-[#080C14]/85 to-transparent" />
@@ -246,6 +249,12 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
                     src={project.logo}
                     alt={project.name}
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.endsWith('/logo.png')) {
+                        target.src = '/logo.png';
+                      }
+                    }}
                     className="w-11 h-11 rounded-xl border border-amber-500/30 group-hover:border-amber-400 bg-slate-900 object-cover shrink-0 shadow-sm shadow-amber-500/10 transition-colors"
                   />
                   <div className="min-w-0 flex-1">

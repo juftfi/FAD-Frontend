@@ -89,6 +89,9 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             src={project.banner}
             alt={project.name}
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
             className="w-full h-full object-cover object-center opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/40 to-transparent" />
@@ -107,6 +110,12 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
               src={project.logo}
               alt={project.name}
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.endsWith('/logo.png')) {
+                  target.src = '/logo.png';
+                }
+              }}
               className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl border-2 border-amber-500/40 bg-slate-900 object-cover shadow-lg"
             />
             <div>

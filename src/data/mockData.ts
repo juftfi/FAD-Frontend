@@ -105,8 +105,8 @@ export const INITIAL_PROJECTS: Project[] = [
     symbol: 'FVLT',
     tagline: 'Multi-Strategy Liquidity Distiller & Auto-Compounder on BNB Chain',
     description: 'FAD Vault optimizes yield across PancakeSwap v3 and Binance Smart Chain lending protocols with automated rebalancing and zero-loss risk buffers. Features multi-chain liquidity vaults backed by CertiK verified smart contracts.',
-    logo: '/src/assets/images/fad_vault_logo_1790703212636.jpg',
-    banner: '/src/assets/images/brew_launchpad_hero_1790661362294.jpg',
+    logo: '/logo.png',
+    banner: '/images/brew_launchpad_hero_1790661362294.jpg',
     launchType: 'overflow',
     status: 'live',
     tokenPriceBnb: 0.00045, // ~ $0.27 USD
@@ -204,7 +204,7 @@ export const INITIAL_PROJECTS: Project[] = [
     tagline: 'Autonomous AI Arbitrage Agents on BNB Smart Chain',
     description: 'Decentralized autonomous AI agents that analyze mempool transactions and execute micro-arbitrage on BSC DEXs, returning profits to stakers in BNB.',
     logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80',
-    banner: '/src/assets/images/brew_taproom_vault_1790661400433.jpg',
+    banner: '/images/brew_taproom_vault_1790661400433.jpg',
     launchType: 'fair-launch',
     status: 'live',
     tokenPriceBnb: 0.0012, // ~ $0.72 USD
@@ -300,7 +300,7 @@ export const INITIAL_PROJECTS: Project[] = [
     tagline: 'Zero-Slippage Omnichain Liquidity Pipes Powered by LayerZero',
     description: 'Instant liquidity swaps between Binance Smart Chain, Ethereum, Arbitrum, and Base. Built with EIP-1167 gas-optimized diamond facets, offering sub-cent transfer fees.',
     logo: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=120&auto=format&fit=crop&q=80',
-    banner: '/src/assets/images/brew_launchpad_hero_1790661362294.jpg',
+    banner: '/images/brew_launchpad_hero_1790661362294.jpg',
     launchType: 'standard',
     status: 'upcoming',
     tokenPriceBnb: 0.002, // ~ $1.20 USD
@@ -384,7 +384,7 @@ export const INITIAL_PROJECTS: Project[] = [
     tagline: 'Sub-Second Decentralized Futures & Options on BNB Chain',
     description: 'Orderbook-grade on-chain perpetual trading up to 100x leverage on crypto pairs with zero gas execution powered by off-chain matching and on-chain settlement.',
     logo: 'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=120&auto=format&fit=crop&q=80',
-    banner: '/src/assets/images/brew_taproom_vault_1790661400433.jpg',
+    banner: '/images/brew_taproom_vault_1790661400433.jpg',
     launchType: 'overflow',
     status: 'ended',
     tokenPriceBnb: 0.0008,

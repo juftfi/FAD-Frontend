@@ -64,6 +64,12 @@ export const MilestoneDashboard: React.FC = () => {
               src={p.logo}
               alt={p.name}
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.endsWith('/logo.png')) {
+                  target.src = '/logo.png';
+                }
+              }}
               className="w-5 h-5 rounded-md object-cover"
             />
             <span>{p.name} (${p.symbol})</span>
