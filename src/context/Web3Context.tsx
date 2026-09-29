@@ -413,7 +413,7 @@ export const Web3Provider: React.FC<{ children: ReactNode }> = ({ children }) =>
       symbol: newProjectData.symbol || 'NFAD',
       tagline: newProjectData.tagline || 'Next-Gen DeFi Protocol on Binance Smart Chain',
       description: newProjectData.description || 'Deployed using FAD EIP-1167 Minimal Proxy Factory with upgradeable proxy support.',
-      logo: 'https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?w=120&auto=format&fit=crop&q=80',
+      logo: '/src/assets/images/fad_vault_logo_1790703212636.jpg',
       banner: '/src/assets/images/brew_launchpad_hero_1790661362294.jpg',
       launchType: newProjectData.launchType || 'fair-launch',
       status: 'upcoming',

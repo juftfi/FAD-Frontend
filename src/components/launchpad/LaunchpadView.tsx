@@ -246,7 +246,7 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
                     src={project.logo}
                     alt={project.name}
                     referrerPolicy="no-referrer"
-                    className="w-11 h-11 rounded-lg border border-slate-700 bg-slate-800 object-cover shrink-0"
+                    className="w-11 h-11 rounded-xl border border-amber-500/30 group-hover:border-amber-400 bg-slate-900 object-cover shrink-0 shadow-sm shadow-amber-500/10 transition-colors"
                   />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between">
