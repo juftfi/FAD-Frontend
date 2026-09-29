@@ -77,6 +77,7 @@ export const STAKING_TIERS: StakingTier[] = [
       'Direct council voting on project incubator grants'
     ]
   },
+  
   {
     id: 'Diamond',
     name: 'Diamond Tier',
