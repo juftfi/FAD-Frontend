@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC820" />
+      <stop offset="100%" stop-color="#E5A000" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#242528" />
+  
+  <!-- Left Diamond -->
+  <polygon points="68,256 104,220 140,256 104,292" fill="url(#goldGrad)" />
+  
+  <!-- Right Diamond -->
+  <polygon points="372,256 408,220 444,256 408,292" fill="url(#goldGrad)" />
+
+  <!-- Central FAD Logotype -->
+  <!-- F -->
+  <path d="M 148,194 H 234 V 222 H 176 V 244 H 222 V 270 H 176 V 318 H 148 Z" fill="url(#goldGrad)" />
+
+  <!-- A and D Interlocking Monogram -->
+  <!-- A Left Leg & Apex -->
+  <polygon points="234,318 266,194 294,194 326,318 296,318 288,288 252,288 246,318" fill="url(#goldGrad)" />
+  <!-- A inner counter -->
+  <polygon points="270,222 258,266 282,266" fill="#242528" />
+
+  <!-- D Outer Loop and Baseline Hook connecting to A -->
+  <path d="M 308,194 H 350 C 392,194 416,220 416,256 C 416,292 392,318 350,318 H 298 L 306,290 H 346 C 370,290 386,276 386,256 C 386,236 370,222 346,222 H 314 Z" fill="url(#goldGrad)" />
+</svg>

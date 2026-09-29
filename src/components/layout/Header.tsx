@@ -48,12 +48,25 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 w-full border-b border-[#1E293B] bg-[#080C14]/90 backdrop-blur-md">
       {/* Strict Top Bar Contract: 3 Zones: Brand Title (single text element) - Nav Links - Actions */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Zone 1: Single text element wordmark */}
+        {/* Zone 1: Single brand identity with logo and wordmark */}
         <button
           onClick={() => setActiveTab('launchpad')}
-          className="text-left font-display text-xl font-bold tracking-tight text-white hover:text-amber-400 transition-colors shrink-0"
+          className="flex items-center gap-3 text-left transition-all hover:opacity-95 shrink-0 group cursor-pointer"
+          title="FAD - BSC Launchpad"
         >
-          <span className="text-amber-500">FAD</span>
+          <img
+            src="/logo.png"
+            alt="FAD Logo"
+            className="h-9 w-9 rounded-lg object-contain border border-amber-500/30 group-hover:border-amber-400 shadow-sm shadow-amber-500/20 transition-all"
+          />
+          <div className="flex items-center gap-1.5">
+            <span className="font-display text-xl font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">
+              FAD
+            </span>
+            <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-400 border border-amber-500/30">
+              BSC
+            </span>
+          </div>
         </button>
 
         {/* Zone 2: 4-6 primary nav links with subtle hover states */}

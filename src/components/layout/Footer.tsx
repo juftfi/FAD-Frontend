@@ -13,8 +13,15 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Col 1: Brand & mission */}
           <div className="space-y-3">
-            <div className="font-display text-lg font-bold text-white">
-              <span className="text-amber-500">FAD</span>
+            <div className="flex items-center gap-2.5">
+              <img
+                src="/logo.png"
+                alt="FAD Logo"
+                className="h-8 w-8 rounded-md object-contain border border-amber-500/20"
+              />
+              <span className="font-display text-lg font-bold text-white">
+                <span className="text-amber-500">FAD</span>
+              </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               Binance Smart Chain tier-governed launchpad and decentralized liquidity engine. Verified by CertiK and PeckShield with automated streaming vesting and gas-optimized minimal proxy clones.
