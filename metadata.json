@@ -1,0 +1,6 @@
+{
+  "name": "BrewLaunch - BSC Tiered Launchpad & Liquidity Engine",
+  "description": "Premier Binance Smart Chain launchpad featuring tiered staking, fair launch overflow mechanisms, automated streaming vesting schedules, upgradeable contracts, audit verification, and gas-optimized deployments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
