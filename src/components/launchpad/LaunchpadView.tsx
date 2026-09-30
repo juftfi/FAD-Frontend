@@ -13,9 +13,12 @@ import {
   Percent,
   CheckCircle2,
   Lock,
-  PlusCircle
+  PlusCircle,
+  ExternalLink,
+  Coins
 } from 'lucide-react';
 import { ProjectDetailModal } from './ProjectDetailModal';
+import { ProjectLogo } from '../common/ProjectLogo';
 
 interface LaunchpadViewProps {
   setActiveTab: (tab: string) => void;
@@ -80,17 +83,29 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
+            <a
+              href="https://flap.sh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 rounded-lg shadow-lg shadow-amber-500/25 transition-all flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] group"
+              title="Buy $FAD on flap.sh"
+            >
+              <Coins className="w-4 h-4 text-slate-950 group-hover:rotate-12 transition-transform" />
+              <span>Buy $FAD</span>
+              <ExternalLink className="w-3.5 h-3.5 text-slate-950/70" />
+            </a>
+
             <button
               onClick={() => setActiveTab('staking')}
-              className="px-5 py-2.5 text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-lg shadow-lg shadow-amber-500/20 transition-all flex items-center gap-2"
+              className="px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#162032] hover:bg-[#1E293B] border border-amber-500/40 hover:border-amber-400 rounded-lg shadow-lg shadow-amber-500/10 transition-all flex items-center gap-2"
             >
               <span>Explore Staking Tiers</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 text-amber-400" />
             </button>
 
             <button
               onClick={() => setActiveTab('factory')}
-              className="px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#162032] hover:bg-[#1E293B] border border-slate-700 hover:border-amber-400/40 rounded-lg transition-all flex items-center gap-2"
+              className="px-5 py-2.5 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-[#162032]/70 hover:bg-[#1E293B] border border-slate-800 hover:border-slate-700 rounded-lg transition-all flex items-center gap-2"
             >
               <PlusCircle className="w-4 h-4 text-amber-400" />
               <span>Launch a Project (EIP-1167)</span>
@@ -245,16 +260,10 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
               <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                 {/* Logo & Title */}
                 <div className="flex items-start gap-3">
-                  <img
+                  <ProjectLogo
                     src={project.logo}
                     alt={project.name}
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      if (!target.src.endsWith('/logo.png')) {
-                        target.src = '/logo.png';
-                      }
-                    }}
+                    symbol={project.symbol}
                     className="w-11 h-11 rounded-xl border border-amber-500/30 group-hover:border-amber-400 bg-slate-900 object-cover shrink-0 shadow-sm shadow-amber-500/10 transition-colors"
                   />
                   <div className="min-w-0 flex-1">

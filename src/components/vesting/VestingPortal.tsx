@@ -12,6 +12,7 @@ import {
   Unlock,
   AlertCircle
 } from 'lucide-react';
+import { ProjectLogo } from '../common/ProjectLogo';
 
 export const VestingPortal: React.FC = () => {
   const { projects, userContributions, claimVestingTokens, bnbBalance } = useWeb3();
@@ -142,16 +143,10 @@ export const VestingPortal: React.FC = () => {
                   {/* Top Bar */}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img
+                      <ProjectLogo
                         src={project.logo}
                         alt={project.name}
-                        referrerPolicy="no-referrer"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          if (!target.src.endsWith('/logo.png')) {
-                            target.src = '/logo.png';
-                          }
-                        }}
+                        symbol={project.symbol}
                         className="w-10 h-10 rounded-lg border border-slate-700 bg-slate-800 object-cover"
                       />
                       <div>

@@ -18,6 +18,7 @@ import {
   Calendar,
   Vote
 } from 'lucide-react';
+import { ProjectLogo } from '../common/ProjectLogo';
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -106,16 +107,10 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
           {/* Project Identity Lockup */}
           <div className="absolute bottom-3 left-4 sm:left-6 flex items-end gap-3 sm:gap-4">
-            <img
+            <ProjectLogo
               src={project.logo}
               alt={project.name}
-              referrerPolicy="no-referrer"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.src.endsWith('/logo.png')) {
-                  target.src = '/logo.png';
-                }
-              }}
+              symbol={project.symbol}
               className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl border-2 border-amber-500/40 bg-slate-900 object-cover shadow-lg"
             />
             <div>

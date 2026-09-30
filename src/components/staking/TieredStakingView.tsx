@@ -14,7 +14,8 @@ import {
   Coins,
   Sparkles,
   Zap,
-  Clock
+  Clock,
+  ExternalLink
 } from 'lucide-react';
 
 export const TieredStakingView: React.FC = () => {
@@ -145,8 +146,18 @@ export const TieredStakingView: React.FC = () => {
               </button>
             </div>
 
-            <div className="text-xs text-slate-400">
-              Available: <span className="font-mono text-amber-400 font-semibold">{fadBalance.toLocaleString()} $FAD</span>
+            <div className="flex items-center gap-2 text-xs text-slate-400">
+              <span>Available: <span className="font-mono text-amber-400 font-semibold">{fadBalance.toLocaleString()} $FAD</span></span>
+              <a
+                href="https://flap.sh"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-400 hover:text-amber-300 underline underline-offset-2 ml-1"
+                title="Buy $FAD on flap.sh"
+              >
+                <span>Buy $FAD</span>
+                <ExternalLink className="w-2.5 h-2.5" />
+              </a>
             </div>
           </div>
 

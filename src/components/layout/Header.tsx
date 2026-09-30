@@ -1,6 +1,6 @@
 import React from 'react';
 import { useWeb3 } from '../../context/Web3Context';
-import { Bell, Flame, ShieldCheck, ChevronDown, Check, Coins } from 'lucide-react';
+import { Bell, Flame, ShieldCheck, ChevronDown, Check, Coins, ExternalLink } from 'lucide-react';
 import { NetworkType } from '../../types';
 
 interface HeaderProps {
@@ -114,6 +114,18 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Zone 3: 1-2 primary actions (Network Switcher, Faucet, Notifications, Wallet) */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Buy $FAD button */}
+          <a
+            href="https://flap.sh"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Buy $FAD Token on flap.sh"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 rounded-lg shadow-sm shadow-amber-500/20 transition-all whitespace-nowrap group hover:scale-[1.02]"
+          >
+            <span>Buy $FAD</span>
+            <ExternalLink className="w-3 h-3 text-slate-950/70" />
+          </a>
+
           {/* Faucet button */}
           <button
             onClick={requestFaucet}

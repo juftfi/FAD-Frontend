@@ -106,7 +106,7 @@ export const INITIAL_PROJECTS: Project[] = [
     symbol: 'FVLT',
     tagline: 'Multi-Strategy Liquidity Distiller & Auto-Compounder on BNB Chain',
     description: 'FAD Vault optimizes yield across PancakeSwap v3 and Binance Smart Chain lending protocols with automated rebalancing and zero-loss risk buffers. Features multi-chain liquidity vaults backed by CertiK verified smart contracts.',
-    logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80',
+    logo: '/logo.png',
     banner: '/images/brew_launchpad_hero_1790661362294.jpg',
     launchType: 'overflow',
     status: 'live',
