@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               </a>
 
               <a
-                href="https://flap.sh/bnb/0xe21b7ff7ad61a69fcc979b563edd8b72c2b37777"
+                href="https://flap.sh/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 hover:border-amber-400 text-amber-300 hover:text-amber-200 transition-all text-xs font-semibold shadow-sm group"

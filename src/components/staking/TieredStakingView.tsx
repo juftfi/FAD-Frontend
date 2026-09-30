@@ -149,7 +149,7 @@ export const TieredStakingView: React.FC = () => {
             <div className="flex items-center gap-2 text-xs text-slate-400">
               <span>Available: <span className="font-mono text-amber-400 font-semibold">{fadBalance.toLocaleString()} $FAD</span></span>
               <a
-                href="https://flap.sh/bnb/0xe21b7ff7ad61a69fcc979b563edd8b72c2b37777"
+                href="https://flap.sh/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-400 hover:text-amber-300 underline underline-offset-2 ml-1"
