@@ -116,10 +116,10 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Buy $FAD button */}
           <a
-            href="https://flap.sh"
+            href="https://flap.sh/bnb/0xe21b7ff7ad61a69fcc979b563edd8b72c2b37777"
             target="_blank"
             rel="noreferrer noopener"
-            title="Buy $FAD Token on flap.sh"
+            title="Buy $FAD Token on Flap (BNB Chain)"
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 rounded-lg shadow-sm shadow-amber-500/20 transition-all whitespace-nowrap group hover:scale-[1.02]"
           >
             <span>Buy $FAD</span>
