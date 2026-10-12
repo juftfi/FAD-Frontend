@@ -84,7 +84,7 @@ export const LaunchpadView: React.FC<LaunchpadViewProps> = ({ setActiveTab }) =>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
-              href="https://flap.sh/"
+              href="https://flap.sh/bnb/0xa83c02552e166637b4ea4694cb383e1bb5f77777"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 rounded-lg shadow-lg shadow-amber-500/25 transition-all flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98] group"
